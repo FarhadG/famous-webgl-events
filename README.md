@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/Famous/engine-seed.svg?branch=master)](https://travis-ci.org/Famous/engine-seed)  [![Dependency Status](https://david-dm.org/famous/engine-seed.svg)](https://david-dm.org/famous/engine-seed) [![devDependency Status](https://david-dm.org/famous/engine-seed/dev-status.svg)](https://david-dm.org/famous/engine-seed#info=devDependencies)
 
-Here's a simple <a href="#something" target="_blank">demo</a> showcasing an implementation of having WebGL and DOM events working together, with the same API. If you're interested in seeing this particular WebGL eventing model, here's an <a href"https://github.com/FarhadG/webgl-picking" target="_blank">example with raw WebGL</a>.
+Here's a simple <a href="https://api-te.famo.us/codemanager/v1/containers/69aba046-aa3b-47ca-b111-537b86ce969e/share" target="_blank">demo</a> showcasing an implementation of having WebGL and DOM events working together, with the same API. If you're interested in seeing this particular WebGL eventing model, here's an <a href"https://github.com/FarhadG/webgl-picking" target="_blank">example with raw WebGL</a>.
 
 ---
 
@@ -11,7 +11,7 @@ Here's a simple <a href="#something" target="_blank">demo</a> showcasing an impl
 
 The lights are in DOM (HTML elements) that can be moved around with a `click`, or turned on/off with a `double click`. The boxes are GL meshes and they move around randomly with a `click` event and grow/shink with a `scroll` event.
 
-Go ahead and give it a try: <a href="something" target="_blank"></a>
+Go ahead and give it a try: <a href="https://api-te.famo.us/codemanager/v1/containers/69aba046-aa3b-47ca-b111-537b86ce969e/share" target="_blank">DEMO</a>
 
 ---
 
