@@ -12,7 +12,7 @@ FamousEngine.init();
 var root = FamousEngine.createScene().addChild();
 
 // Attach four lights
-for(var i = 0; i < 4; i++)
+for(var i = 0; i < 3; i++)
     new Light(root.addChild());
 
 // Attach a ton of clickable boxes
