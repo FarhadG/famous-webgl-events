@@ -1,15 +1,25 @@
-#Engine-Seed
-> A seed project to get started with the famous engine
+#Famous WebGL Events
+> Implementation for showcasing WebGL and DOM events with Famou
 
 [![Build Status](https://travis-ci.org/Famous/engine-seed.svg?branch=master)](https://travis-ci.org/Famous/engine-seed)  [![Dependency Status](https://david-dm.org/famous/engine-seed.svg)](https://david-dm.org/famous/engine-seed) [![devDependency Status](https://david-dm.org/famous/engine-seed/dev-status.svg)](https://david-dm.org/famous/engine-seed#info=devDependencies)
+
+Here's a simple <a href="#something" target="_blank">demo</a> showcasing an implementation of having WebGL and DOM events working together, with the same API. If you're interested in seeing this particular WebGL eventing model, here's an <a href"https://github.com/FarhadG/webgl-picking" target="_blank">example with raw WebGL</a>.
+
+---
+
+###Demo
+
+The lights are in DOM (HTML elements) that can be moved around with a `click`, or turned on/off with a `double click`. The boxes are GL meshes and they move around randomly with a `click` event and grow/shink with a `scroll` event.
+
+Go ahead and give it a try: <a href="something" target="_blank"></a>
 
 ---
 
 ###Installation
 
 ```bash
-git clone https://github.com/Famous/engine-seed
-cd engine-seed
+git clone https://github.com/FarhadG/famous-webgl-events.git
+cd famous-webgl-events
 # rm -rf .git && git init && git commit -m "Make it so" # optionally reset git history
 npm i # install dependencies
 ```
