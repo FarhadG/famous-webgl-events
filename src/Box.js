@@ -24,8 +24,8 @@ function Sphere(node) {
 
     // Initialize the events and a state for animation
     this.growing = false;
-    node.addUIEvent('click');
-    node.addUIEvent('wheel');
+    node.addUIEvent('click')
+        .addUIEvent('wheel');
 
     // Add a spinner component to the 'node' that is called, every frame
     var spinner = node.addComponent({
