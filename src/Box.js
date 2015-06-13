@@ -7,7 +7,7 @@ var Size = require('famous/components/Size');
 var Color = require('famous/utilities/Color');
 var randomColor = require('./randomColor');
 
-function Sphere(node) {
+function Box(node) {
     this.node = node;
     this._id = node.addComponent(this);
     this.align = new Align(node);
@@ -67,8 +67,8 @@ var eventsHandling = {
 };
 
 // Handle events as they're received
-Sphere.prototype.onReceive = function onReceive(type, ev) {
+Box.prototype.onReceive = function onReceive(type, ev) {
     eventsHandling[type].call(this);
 };
 
-module.exports = Sphere;
+module.exports = Box;
