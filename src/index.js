@@ -16,6 +16,6 @@ for(var i = 0; i < 3; i++)
     new Light(root.addChild());
 
 // Attach a ton of clickable boxes
-for(var i = 0; i < 300; i++)
+for(var i = 0; i < 100; i++)
     new Box(root.addChild());
 
