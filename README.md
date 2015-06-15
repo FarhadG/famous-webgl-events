@@ -1,5 +1,5 @@
 #Famous WebGL Events
-> Implementation for showcasing WebGL and DOM events with Famou
+> Implementation for showcasing WebGL and DOM events with Famous
 
 [![Build Status](https://travis-ci.org/Famous/engine-seed.svg?branch=master)](https://travis-ci.org/Famous/engine-seed)  [![Dependency Status](https://david-dm.org/famous/engine-seed.svg)](https://david-dm.org/famous/engine-seed) [![devDependency Status](https://david-dm.org/famous/engine-seed/dev-status.svg)](https://david-dm.org/famous/engine-seed#info=devDependencies)
 
