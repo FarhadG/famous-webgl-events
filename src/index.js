@@ -8,8 +8,8 @@ var Light = require('./Light');
 // Boilerplate code to make your life easier
 FamousEngine.init();
 
-// Initialize with a scene; then, add a 'node' to the scene root
-var root = FamousEngine.createScene().addChild();
+// Initialize the scene
+var root = FamousEngine.createScene();
 
 // Attach four lights
 for(var i = 0; i < 3; i++)
