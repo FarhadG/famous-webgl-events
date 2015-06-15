@@ -9,7 +9,6 @@ var randomColor = require('./randomColor');
 
 function Box(node) {
     this.node = node;
-    this._id = node.addComponent(this);
     this.align = new Align(node);
     this.size = new Size(node);
 

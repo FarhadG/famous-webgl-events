@@ -10,7 +10,6 @@ var randomColor = require('./randomColor');
 function Light(node) {
     var _this = this;
     this.node = node;
-    this._id = node.addComponent(this);
 
     // Initialize the light, along with a color (off) and size
     var lightSize = 50;
@@ -24,8 +23,7 @@ function Light(node) {
         .setPosition(0, 0, 500)
         .setMountPoint(0.5, 0.5, 0.5)
         .setOrigin(0.5, 0.5, 0.5)
-        .setAbsoluteSize(lightSize * 2, lightSize)
-        .requestUpdate(this._id)
+        .setAbsoluteSize(lightSize * 2, lightSize);
 
     new DOMElement(node)
         .setContent('Light (DOM)')
