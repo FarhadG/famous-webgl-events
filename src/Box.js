@@ -22,10 +22,8 @@ function Box(node) {
     this.mesh.setGeometry('Box');
     this.mesh.setBaseColor(new Color(randomColor()));
 
-    // Initialize the events and a state for animation
-    this.growing = false;
-    node.addUIEvent('click')
-        .addUIEvent('wheel');
+    // Initialize the event
+    node.addUIEvent('click');
 
     // Add a spinner component to the 'node' that is called, every frame
     var spinner = node.addComponent({
@@ -43,32 +41,15 @@ function Box(node) {
         .requestUpdate(spinner)
 }
 
-var eventsHandling = {
-    // Grow/shrink the size of the box, when it's a scroll event
-    'wheel': function() {
-        var _this = this;
-        if (this.growing) return;
-        this.growing = true;
-        var size = this.node.getSize();
-        var random = Math.random();
-        var factor = (random > 0.5) ? random * 3 : -random * 2;
-        this.size.setAbsolute(size[0]*factor, size[1]*factor, size[2]*factor, {
-            duration: 800,
-            curve: 'outBounce'
-        }, function() { _this.growing = false; });
-    },
-    // Move the box to a random position, when it's clicked
-    'click': function() {
+// Handle events as they're received
+Box.prototype.onReceive = function onReceive(type, ev) {
+    if (type === 'click') {
+        // Move the box to a random position, when it's clicked
         this.align.set(Math.random(), Math.random(), Math.random(), {
             duration: 1000,
             curve: 'outElastic'
         });
     }
-};
-
-// Handle events as they're received
-Box.prototype.onReceive = function onReceive(type, ev) {
-    eventsHandling[type].call(this);
 };
 
 module.exports = Box;

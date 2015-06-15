@@ -15,7 +15,6 @@ Controls:
 - `drag`: You can click and drag the lights around.
 - `double click`: You can turn the lights on/off by double clicking the lights.
 - `click`: You can move the GL boxes around (random) by clicking them.
-- `wheel`: You can grow/shink (random) the size of the GL boxes by scrolling (wheel) on them.
 
 Go ahead and give it a try: <a href="https://api-te.famo.us/codemanager/v1/containers/69aba046-aa3b-47ca-b111-537b86ce969e/share" target="_blank">DEMO</a>
 
